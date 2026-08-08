@@ -3,11 +3,7 @@
 const passedStudents = (students, threshold) => {
 
     let passedStudent = students.filter((student) => {
-
         return student.marks >= threshold;
-
-
-
     })
 
     return passedStudent;
