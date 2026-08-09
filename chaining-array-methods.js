@@ -5,7 +5,7 @@ const calculateHighestTotal = (cart, minPrice) => {
     let total = cart
     .filter((product) => product.price >= minPrice)
     .map(product => product.price * product.qty)
-    .reduce((accumulator, currentValue ) => accumulator + currentValue)
+    .reduce((accumulator, currentValue ) => accumulator + currentValue, 0)
     return total;
 }
 
